@@ -1,38 +1,249 @@
-.App {
-  text-align: center;
+*,
+html {
+  font-family: Helvetica;
+  scroll-behavior: smooth !important;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  background: #f1f3ff;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+.navbar-brand {
+  width: 100px;
+  height: 34px;
+  left: 136px;
+  top: 25px;
+  background: #0d28a6;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar-nav .nav-item:hover .nav-link {
   color: white;
+  transition: 0.3s ease;
+  background: #0d28a6;
+  border-radius: 2px;
+}
+.navbar-nav > li {
+  margin-right: 30px;
+}
+.nav-link {
+  margin-left: 12.5px;
+  margin-right: 12.5px;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+#header {
+  padding-top: 8rem;
+  background: #f1f3ff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.headerLeft {
+  padding-top: 8rem;
+}
+
+#our-services {
+  padding-top: 8rem;
+}
+
+.ourRight {
+  padding: 5rem 3rem 0rem 3rem;
+}
+
+.ourRight > p {
+  padding: 2rem 7.725rem 0rem 0rem;
+}
+
+.checkList {
+  margin: 0;
+  padding: 0;
+}
+.checkList > li {
+  list-style: none;
+}
+
+.checkList > li > span {
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#why-us {
+  padding-top: 8rem;
+}
+
+.cardContainer > .card {
+  min-height: 196px;
+}
+
+.cardContainer > .card > .card-img {
+  width: 32px;
+  margin-top: 1.5em;
+  margin-left: 1em;
+}
+.cardContainer > .card > .card-body {
+  margin-top: 1.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 0;
+}
+
+.cardContainer > .card > .card-title {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.cardContainer > .card > .card-body > .card-text {
+  font-size: 14px;
+  margin-top: 1em;
+}
+
+#testimonial {
+  padding-top: 8em;
+}
+
+.item {
+  background-color: #f1f3ff;
+  border-radius: 8px;
+  min-height: 270px;
+  width: 700px;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  display: none;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  width: 48px;
+  height: 48px;
+  background: none;
+  border: 0.5px solid #c4c4c4;
+  border-radius: 50%;
+}
+
+.owl-carousel .owl-nav:hover button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel button.owl-dot {
+  width: 48px;
+  height: 48px;
+  background: #5cb85f;
+  border: 0.5px solid #c4c4c4;
+  border-radius: 50%;
+}
+
+.sewa-card {
+  color: #ffffff;
+  background: #0d28a6;
+  border-radius: 13px;
+}
+
+#faq {
+  padding-top: 6em;
+}
+
+.accordion-button {
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+}
+
+.accordion-item {
+  border: black;
+  padding-bottom: 20px;
+}
+
+.accordion-body {
+  border: 1px solid #d4d4d4;
+  border-radius: 0px 0px 10px 10px;
+}
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: white;
+}
+
+.foot-nav > a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  font-style: normal;
+  padding-bottom: 10px;
+}
+.social-icon > a {
+  margin-right: 10px;
+}
+
+.searchCard {
+  position: relative;
+  margin-top: -4em;
+  background-color: white;
+
+  /* Shadow/High */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+/* TODO  */
+.carCard {
+min-height: 38.5rem;
+}
+
+.carCard > .card-body {
+  padding-top: 1.5em;
+}
+
+.carCard > .card-img {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+  margin: auto;
+}
+
+.carsDescription {
+  min-height: 8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #header {
+    padding: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .cardContainer > .card > .card-img {
+    width: 32px;
+    margin-top: 1.5em;
+    margin-left: 2em;
+  }
+  .cardContainer > .card > .card-body {
+    margin-top: 1.5em;
+    margin-left: 2em;
+    margin-right: 1em;
+    padding: 0;
+  }
+  .item {
+    width: unset;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .item {
+    width: unset;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .item {
+    width: 500px;
   }
 }
